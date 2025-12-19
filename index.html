@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>PA Sales Territory Mapper</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script crossorigin src="https://unpkg.com/react@18/umd/react.development.js"></script>
+    <script crossorigin src="https://unpkg.com/react-dom@18/umd/react-dom.development.js"></script>
+    <script src="https://unpkg.com/@babel/standalone/babel.min.js"></script>
+    <style>
+        @media print {
+            body { -webkit-print-color-adjust: exact; }
+        }
+    </style>
+</head>
+<body class="bg-slate-50 text-slate-900">
+    <div id="root"></div>
+    <script type="text/babel">
+        const { useState, useMemo } = React;
+        
+        function App() {
+            return (
+                <div className="min-h-screen bg-slate-50 flex flex-col font-sans text-slate-900">
+                    <header className="bg-white border-b border-slate-200 px-6 py-4">
+                        <h1 className="text-xl font-bold text-slate-900">PA Territory Mapper</h1>
+                        <p className="text-sm text-slate-500">Sales Region Visualization Tool</p>
+                    </header>
+                    <main className="flex-1 p-6">
+                        <div className="max-w-4xl mx-auto bg-white rounded-xl shadow-sm border border-slate-200 p-8">
+                            <h2 className="text-2xl font-bold mb-4">Pennsylvania Sales Territory Mapping Tool</h2>
+                            <p className="text-slate-600">Interactive visualization for sales territory assignments</p>
+                            <p className="mt-4 text-sm text-slate-500">Full application coming soon...</p>
+                        </div>
+                    </main>
+                </div>
+            );
+        }
+        
+        const root = ReactDOM.createRoot(document.getElementById('root'));
+        root.render(<App />);
+    </script>
+</body>
+</html>
